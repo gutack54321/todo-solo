@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 2e79993c17d5ad52d9e9
+            clientSecret: 1397f2096c2f06c9f78a2b649f975d18a885f912
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - user:email
+              - read:user
+    provider:
+      github:
+        authorization-url: https://github.com/login/oauth/authorize
+        token-uri: https://github.com/login/oauth/access_token  #깃허브 인가서버로 accessToken 발급 요청 uri
+        user-info-uri: https://api.github.com/user  #깃허브 리소스 서버 uri
