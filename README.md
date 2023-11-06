@@ -2,6 +2,7 @@
 간단한 todo 어플리케이션 백엔드, 프론트엔드 작업
 
 github OAuth2 구현
+
 todo CRUD
 
 
